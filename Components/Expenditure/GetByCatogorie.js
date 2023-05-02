@@ -1,5 +1,5 @@
 const ExpenceCatogieRouter = require('express').Router();
-const ExpenditureModel = require('../../models/Expenditure')
+const ExpenditureModel = require('../../Models/Expenditure')
 
 ExpenceCatogieRouter.post('/date', async(req, res, next)=>{
     const {userId , catogorie } = req.body;

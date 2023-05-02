@@ -1,6 +1,6 @@
 const EditIncomRoute = require('express').Router()
 const { validate } = require('../../Common/auth')
-const incomeModel = require('../../models/IncomeModel')
+const incomeModel = require('../../Models/IncomeModel')
 
 EditIncomRoute.patch('/edit',validate, async(req,res,next)=>{
     const {_id,detail,amount} = req.body;

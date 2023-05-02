@@ -1,5 +1,5 @@
 const GetExtenditureRouter = require('express').Router();
-const ExpenditureModel = require('../../models/Expenditure')
+const ExpenditureModel = require('../../Models/Expenditure')
 
 GetExtenditureRouter.post('/get', async(req, res, next)=>{
     const {userId}= req.body;

@@ -1,5 +1,5 @@
 const ExpenceDateRouter = require('express').Router();
-const ExpenditureModel = require('../../models/Expenditure')
+const ExpenditureModel = require('../../Models/Expenditure')
 
 ExpenceDateRouter.post('/date', async(req, res, next)=>{
     const {userId , date } = req.body;

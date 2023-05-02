@@ -1,6 +1,6 @@
 const ForgetRouter = require('express').Router()
 const { hashPassword } = require('../../Common/auth');
-const userModel = require('../../models/UserModel')
+const userModel = require('../../Models/UserModel')
 
 ForgetRouter.patch('/forget',async(req,res,next)=>{
     const { email , password } = req.body;

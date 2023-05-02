@@ -1,5 +1,5 @@
 const GetIncomeRouter = require('express').Router();
-const incomeModel = require('../../models/IncomeModel')
+const incomeModel = require('../../Models/IncomeModel')
 
 GetIncomeRouter.post('/get', async(req,res,next)=>{
     const {userId} = req.body;

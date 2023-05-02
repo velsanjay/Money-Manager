@@ -1,7 +1,7 @@
 const IncomeRouter = require('express').Router()
 const { createToken } = require('../../Common/auth');
-const incomeModel = require('../../models/IncomeModel')
-const userModel = require('../../models/UserModel')
+const incomeModel = require('../../Models/IncomeModel')
+const userModel = require('../../Models/UserModel')
 
 IncomeRouter.post('/new', async(req, res, next)=>{
     const { userId, detail , amount } = req.body;

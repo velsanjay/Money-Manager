@@ -1,6 +1,6 @@
 const SignInRouter = require('express').Router()
 const { hashCompare } = require('../../Common/auth');
-const userModel = require('../../models/UserModel')
+const userModel = require('../../Models/UserModel')
 
 SignInRouter.post('/signin', async (req, res, next) => {
     const { email, password } = req.body;

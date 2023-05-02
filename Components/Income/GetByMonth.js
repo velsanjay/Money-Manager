@@ -1,5 +1,5 @@
 const IncomeMonthRouter = require('express').Router();
-const incomeModel = require('../../models/IncomeModel');
+const incomeModel = require('../../Models/IncomeModel');
 
 IncomeMonthRouter.post('/month', async(req, res, next)=>{
     const {userId , month } = req.body;

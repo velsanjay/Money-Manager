@@ -1,6 +1,6 @@
 const EditExpenceRouter = require('express').Router()
 const { validate } = require('../../Common/auth')
-const ExpenditureModel = require('../../models/Expenditure')
+const ExpenditureModel = require('../../Models/Expenditure')
 
 EditExpenceRouter.patch('/edit',validate,async(req,res,next)=>{
     const {_id,detail,amount} = req.body;

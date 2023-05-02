@@ -1,7 +1,7 @@
 const NewExpenditure = require('express').Router();
 const { createToken } = require('../../Common/auth');
-const ExpenditureModel = require('../../models/Expenditure');
-const userModel = require('../../models/UserModel')
+const ExpenditureModel = require('../../Models/Expenditure');
+const userModel = require('../../Models/UserModel')
 
 NewExpenditure.post('/new', async(req, res, next)=>{
     const { userId , catogorie, amount , detail } = req.body;

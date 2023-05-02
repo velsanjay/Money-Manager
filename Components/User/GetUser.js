@@ -1,5 +1,5 @@
 const GetUser = require('express').Router()
-const UserModels = require('../../models/UserModel')
+const UserModels = require('../../Models/UserModel')
 
 GetUser.post('/',async(req, res, next)=>{
     const {userId}= req.body

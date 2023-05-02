@@ -1,6 +1,6 @@
 const SignUpRouter = require('express').Router();
 const { hashPassword } = require('../../Common/auth');
-const userModel =require('../../models/UserModel')
+const userModel =require('../../Models/UserModel')
 
 SignUpRouter.post('/signup', async(req, res, next)=>{
     const { name, email, password,confirmPassword}=req.body;
